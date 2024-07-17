@@ -38,8 +38,18 @@ class MainActivity : AppCompatActivity() {
                     binding?.etemailid?.text?.clear()
                 }
             }else{
-                Toast.makeText(applicationContext,"Name and Email cannot be Blank",Toast.LENGTH_LONG).show()
+                Toast.makeText(applicationContext,"Name and Email can't be Blank",Toast.LENGTH_LONG).show()
             }
 
+
+
+
+
         }
+
+
+
+
+
+
 }
