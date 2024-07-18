@@ -7,8 +7,8 @@ import androidx.recyclerview.widget.RecyclerView
 import eu.practice.room_data_base.databinding.ItemsRowBinding
 
 class ItemAdapter ( val items : ArrayList<EmployeeEntity>,
-                //    private var updateListener:(id:Int) -> Unit,
-                //    private var deleteListener:(id:Int) -> Unit
+                  private var updateListener:(id:Int) -> Unit,
+                    private var deleteListener:(id:Int) -> Unit
 
 ):RecyclerView.Adapter<ItemAdapter.ViewHolder>() {
 
@@ -49,10 +49,10 @@ class ItemAdapter ( val items : ArrayList<EmployeeEntity>,
         }
 
         holder.ivEdite.setOnClickListener {
-          //  updateListener.invoke(item.id)
+            updateListener.invoke(item.id)
         }
         holder.ivDelete.setOnClickListener {
-         //   deleteListener.invoke(item.id)
+          deleteListener.invoke(item.id)
         }
 
 
