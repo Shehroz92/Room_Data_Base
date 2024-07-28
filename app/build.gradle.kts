@@ -35,15 +35,16 @@ android {
 
 dependencies {
 
-     val room_version = "2.3.0"
-     val activityVersion = "1.3.1"
-     implementation("androidx.room:room-runtime:$room_version")
-     kapt("androidx.room:room-compiler:$room_version")
-     implementation("androidx.room:room-ktx:$room_version")
+    val room_version = "2.6.1"
 
+    implementation("androidx.room:room-runtime:$room_version")
+    annotationProcessor("androidx.room:room-compiler:$room_version")
 
+    // To use Kotlin annotation processing tool (kapt)
+    kapt("androidx.room:room-compiler:$room_version")
+    // To use Kotlin (Ktx)
+    implementation("androidx.room:room-ktx:$room_version")
 
-    implementation("androidx.activity:activity-ktx:$activityVersion")
 
     implementation("androidx.core:core-ktx:1.13.1")
     implementation("androidx.appcompat:appcompat:1.7.0")

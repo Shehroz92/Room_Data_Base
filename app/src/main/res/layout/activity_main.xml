@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:padding="10dp"
     tools:context=".MainActivity">
 
@@ -17,6 +18,7 @@
         android:layout_height="wrap_content"
         android:text="Name:"
         android:textSize="18sp"
+        android:layout_marginTop="15dp"
 
  />
     <EditText
@@ -26,8 +28,10 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@+id/tvnamelabel"
         android:hint="Enter Name"
+        android:textColor="@color/black"
         android:layout_marginStart="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp"
         />
 
     <TextView
@@ -50,6 +54,7 @@
         app:layout_constraintStart_toEndOf="@id/tvemaillabe"
         android:id="@+id/etemailid"
         android:width="0dp"
+        android:textColor="@color/black"
         android:layout_marginStart="8dp"
         android:inputType="textEmailAddress"
         android:hint="Enter Email Id"
@@ -70,7 +75,7 @@
         android:id="@+id/tvName"
         android:gravity="center"
         android:text="All the inserted records"
-        android:textColor="@color/black"
+        android:textColor="@color/purple_500"
         android:textSize="18sp"
         android:textStyle="bold"
         />
